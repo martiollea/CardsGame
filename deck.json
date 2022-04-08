@@ -1,0 +1,245 @@
+{
+"deck" : [
+        
+{
+    "number" : "A", 
+    "value" : ["1","11"], 
+    "visible" : "false"
+},
+{
+    "number" : "A", 
+    "value" : ["1","11"], 
+    "visible" : "false"
+},
+{
+    "number" : "A", 
+    "value" : ["1","11"], 
+    "visible" : "false"
+},
+{
+    "number" : "A", 
+    "value" : ["1","11"], 
+    "visible" : "false"
+},
+{
+    "number" : "2", 
+    "value" : "2", 
+    "visible" : "false"
+},
+{
+    "number" : "2", 
+    "value" : "2", 
+    "visible" : "false"
+},
+{
+    "number" : "2", 
+    "value" : "2", 
+    "visible" : "false"
+},
+{
+    "number" : "2", 
+    "value" : "2", 
+    "visible" : "false"
+},
+{
+    "number" : "3", 
+    "value" : "3", 
+    "visible" : "false"
+},
+{
+    "number" : "3", 
+    "value" : "3", 
+    "visible" : "false"
+},
+{
+    "number" : "3", 
+    "value" : "3", 
+    "visible" : "false"
+},
+{
+    "number" : "3", 
+    "value" : "3", 
+    "visible" : "false"
+},
+{
+    "number" : "4", 
+    "value" : "4", 
+    "visible" : "false"
+},
+{
+    "number" : "4", 
+    "value" : "4", 
+    "visible" : "false"
+},
+{
+    "number" : "4", 
+    "value" : "4", 
+    "visible" : "false"
+},
+{
+    "number" : "4", 
+    "value" : "4", 
+    "visible" : "false"
+},
+{
+    "number" : "5", 
+    "value" : "5", 
+    "visible" : "false"
+},
+{
+    "number" : "5", 
+    "value" : "5", 
+    "visible" : "false"
+},
+{
+    "number" : "5", 
+    "value" : "5", 
+    "visible" : "false"
+},
+{
+    "number" : "5", 
+    "value" : "5", 
+    "visible" : "false"
+},
+{
+    "number" : "6", 
+    "value" : "6", 
+    "visible" : "false"
+},
+{
+    "number" : "6", 
+    "value" : "6", 
+    "visible" : "false"
+},
+{
+    "number" : "6", 
+    "value" : "6", 
+    "visible" : "false"
+},
+{
+    "number" : "6", 
+    "value" : "6", 
+    "visible" : "false"
+},
+{
+    "number" : "7", 
+    "value" : "7", 
+    "visible" : "false"
+},
+{
+    "number" : "7", 
+    "value" : "7", 
+    "visible" : "false"
+},
+{
+    "number" : "7", 
+    "value" : "7", 
+    "visible" : "false"
+},
+{
+    "number" : "7", 
+    "value" : "7", 
+    "visible" : "false"
+},
+{
+    "number" : "8", 
+    "value" : "8", 
+    "visible" : "false"
+},
+{
+    "number" : "8", 
+    "value" : "8", 
+    "visible" : "false"
+},
+{
+    "number" : "8", 
+    "value" : "8", 
+    "visible" : "false"
+},
+{
+    "number" : "8", 
+    "value" : "8", 
+    "visible" : "false"
+},
+{
+    "number" : "9", 
+    "value" : "9", 
+    "visible" : "false"
+},
+{
+    "number" : "9", 
+    "value" : "9", 
+    "visible" : "false"
+},
+{
+    "number" : "9", 
+    "value" : "9", 
+    "visible" : "false"
+},
+{
+    "number" : "9", 
+    "value" : "9", 
+    "visible" : "false"
+},
+{
+    "number" : "10", 
+    "value" : "10", 
+    "visible" : "false"
+},
+{
+    "number" : "10", 
+    "value" : "10", 
+    "visible" : "false"
+},
+{
+    "number" : "10", 
+    "value" : "10", 
+    "visible" : "false"
+},
+{
+    "number" : "10", 
+    "value" : "10", 
+    "visible" : "false"
+},
+{
+    "number" : "Q", 
+    "value" : "10", 
+    "visible" : "false"
+},
+{
+    "number" : "Q", 
+    "value" : "10", 
+    "visible" : "false"
+},
+{
+    "number" : "Q", 
+    "value" : "10", 
+    "visible" : "false"
+},
+{
+    "number" : "Q", 
+    "value" : "10", 
+    "visible" : "false"
+},
+{
+    "number" : "K", 
+    "value" : "10", 
+    "visible" : "false"
+},
+{
+    "number" : "K", 
+    "value" : "10", 
+    "visible" : "false"
+},
+{
+    "number" : "K", 
+    "value" : "10", 
+    "visible" : "false"
+},
+{
+    "number" : "K", 
+    "value" : "10", 
+    "visible" : "false"
+}
+]
+}
