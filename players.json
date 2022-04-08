@@ -1,21 +1,19 @@
-{
-    "players" : [
-        {
-            "firstname": "John",
-            "cards":[],
-            "points":0
-        },
-        {
-            "firstname": "Bruno",
-            "cards":[],
-            "points":0
-        },
-        {
-            "firstname": "Michael",
-            "cards":[],
-            "points":0
-        }
-    ]
-}
+[
+    {
+        "firstname": "John",
+        "cards":[],
+        "points":0
+    },
+    {
+        "firstname": "Bruno",
+        "cards":[],
+        "points":0
+    },
+    {
+        "firstname": "Michael",
+        "cards":[],
+        "points":0
+    }
+]
 
             
