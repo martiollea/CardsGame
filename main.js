@@ -1,4 +1,5 @@
 import fs from "fs";
+import { type } from "os";
 class Card {
   constructor(number, value, visible = false) {
     this.number = number;
@@ -54,13 +55,23 @@ let deck = initCards(rawCartas);
 let players = initPlayers(rawPlayers);
 
 shuffle(deck);
+repartir(deck, players);
+console.log(players[0]["cards"]);
 
 function shuffle(cards) {
   for (var i = cards.length - 1; i >= 0; i--) {
-    var j = Math.floor(Math.random() * (i + 1));
-    var temp = cards[i];
+    let j = Math.floor(Math.random() * (i + 1));
+    let temp = cards[i];
     cards[i] = cards[j];
     cards[j] = temp;
   }
   return cards;
+}
+
+function repartir(deck, players) {
+  for (var i = 0; i < players.length; i++) {
+    players[i]["cards"].push(deck[i]);
+    players[i]["cards"][0]["visible"] = true;
+    players[i]["cards"].push(deck[i + players.length]);
+  }
 }
