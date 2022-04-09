@@ -1,5 +1,4 @@
 import fs from "fs";
-import { type } from "os";
 class Card {
   constructor(number, value, visible = false) {
     this.number = number;
@@ -56,7 +55,8 @@ let players = initPlayers(rawPlayers);
 
 shuffle(deck);
 repartir(deck, players);
-console.log(players[0]["cards"]);
+
+console.log(players[0]["cards"].length);
 
 function shuffle(cards) {
   for (var i = cards.length - 1; i >= 0; i--) {
@@ -70,8 +70,25 @@ function shuffle(cards) {
 
 function repartir(deck, players) {
   for (var i = 0; i < players.length; i++) {
-    players[i]["cards"].push(deck[i]);
+    players[i]["cards"].push(deck[0]);
+    deck.shift();
     players[i]["cards"][0]["visible"] = true;
-    players[i]["cards"].push(deck[i + players.length]);
+    players[i]["cards"].push(deck[0]);
+    deck.shift();
+  }
+}
+
+function cartaExtra(deck, player) {
+  player["cards"].push(deck[0]);
+  deck.shift();
+}
+
+function girarCarta(card) {
+  card["visible"] = true;
+}
+
+function plantarse(player) {
+  for (var i = 0; i < player["cards"].length; i++) {
+    if (player["cards"][i]["visible"] === false) player["cards"].splice(i, 1);
   }
 }
