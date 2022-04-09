@@ -26,7 +26,7 @@ let rawCartas = JSON.parse(rawData);
 
 function initPlayers(players) {
   let finalPlayers = [];
-  for (var i = players.length - 1; i >= 0; i--) {
+  for (var i = 0; i < players.length; i++) {
     let player = new Player(
       players[i]["firstname"],
       players[i]["cards"],
@@ -39,7 +39,7 @@ function initPlayers(players) {
 
 function initCards(cartas) {
   let finalCards = [];
-  for (var i = cartas.length - 1; i >= 0; i--) {
+  for (var i = 0; i < cartas.length; i++) {
     let carta = new Card(
       cartas[i]["number"],
       cartas[i]["value"],
@@ -55,11 +55,12 @@ let players = initPlayers(rawPlayers);
 
 shuffle(deck);
 repartir(deck, players);
+let winner = calculaGanador(players);
 
-console.log(players[0]["cards"].length);
+console.log(winner);
 
 function shuffle(cards) {
-  for (var i = cards.length - 1; i >= 0; i--) {
+  for (var i = 0; i < cards.length; i++) {
     let j = Math.floor(Math.random() * (i + 1));
     let temp = cards[i];
     cards[i] = cards[j];
@@ -91,4 +92,33 @@ function plantarse(player) {
   for (var i = 0; i < player["cards"].length; i++) {
     if (player["cards"][i]["visible"] === false) player["cards"].splice(i, 1);
   }
+}
+
+function calculaGanador(players) {
+  let winner = [];
+
+  for (var i = 0; i < players.length; i++) {
+    let result = 0;
+    let mainResult = 0;
+    for (var j = 0; j < players[i]["cards"].length; j++) {
+      result += players[i]["cards"][j]["value"];
+    }
+    console.log(result);
+    if (result > mainResult && result <= 21) {
+      mainResult = result;
+      winner = [];
+      winner = players[i]["firstname"];
+      console.log(winner);
+    } else if (result === mainResult) {
+      winner.push(players[i]["firstname"]);
+    } else console.log("fail");
+  }
+  return winner;
+}
+
+function calculaAValue1(card) {
+  card["value"] = 1;
+}
+function calculaAValue11(card) {
+  card["value"] = 11;
 }
