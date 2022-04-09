@@ -96,10 +96,10 @@ function plantarse(player) {
 
 function calculaGanador(players) {
   let winner = [];
+  let mainResult = 0;
 
   for (var i = 0; i < players.length; i++) {
     let result = 0;
-    let mainResult = 0;
     for (var j = 0; j < players[i]["cards"].length; j++) {
       result += players[i]["cards"][j]["value"];
     }
@@ -111,7 +111,7 @@ function calculaGanador(players) {
       console.log(winner);
     } else if (result === mainResult) {
       winner.push(players[i]["firstname"]);
-    } else console.log("fail");
+    }
   }
   return winner;
 }
