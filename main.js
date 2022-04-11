@@ -1,9 +1,31 @@
 import { deck, players } from "./readJson.js";
-import shuffle from ".shuffle.js";
-import repartir from "repartir.js";
+import { shuffle } from "./shuffle.js";
+import { repartir } from "./repartir.js";
 import * as extraFunctions from "./extraFunctions.js";
-import calculaGanador from "./winner.js";
+import { calculaGanador } from "./winner.js";
 
 shuffle(deck);
 repartir(deck, players);
 let winner = calculaGanador(players);
+
+const playerList = document.getElementById("players");
+
+const renderListItem = (player) => {
+  const li = document.createElement("li");
+
+  const div = document.createElement("div");
+  div.textContent = player.cards;
+
+  li.append(div);
+
+  li.addEventListener("click", onItemClick);
+  return li;
+};
+
+const render = () => {
+  for (var i = 0; i < players.length; i++) {
+    for (var j = 0; j < players[i]["cards"].length; j++) {
+      playerList.appendChild(renderListItem(players[i]["cards"][j]));
+    }
+  }
+};
