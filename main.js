@@ -2,6 +2,8 @@ import { deck, players } from "./readJson.js";
 import { shuffle } from "./shuffle.js";
 import { repartir } from "./repartir.js";
 import * as extraFunctions from "./extraFunctions.js";
+import { apostar } from "./apostar.js";
+import { premiar } from "./premiar";
 import { calculaGanador } from "./winner.js";
 
 shuffle(deck);

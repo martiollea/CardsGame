@@ -2,17 +2,20 @@
     {
         "firstname": "John",
         "cards":[],
-        "points":0
+        "points":0,
+        "apostar":0
     },
     {
         "firstname": "Bruno",
         "cards":[],
-        "points":0
+        "points":0,
+        "apostar":0
     },
     {
         "firstname": "Michael",
         "cards":[],
-        "points":0
+        "points":0,
+        "apostar":0
     }
 ]
 

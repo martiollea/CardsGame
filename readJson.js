@@ -12,6 +12,7 @@ class Player {
     this.firstname = firstname;
     this.cards = cards;
     this.points = points;
+    this.apostar = apostar;
   }
 }
 
@@ -31,7 +32,8 @@ function initPlayers(players) {
     let player = new Player(
       players[i]["firstname"],
       players[i]["cards"],
-      players[i]["points"]
+      players[i]["points"],
+      players[i]["apostar"]
     );
     finalPlayers.push(player);
   }
