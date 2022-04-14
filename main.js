@@ -10,18 +10,14 @@ shuffle(deck);
 repartir(deck, players);
 let winner = calculaGanador(players);
 
+/*
 const playerList = document.getElementById("players");
 
 const renderListItem = (player) => {
-  const li = document.createElement("li");
-
   const div = document.createElement("div");
   div.textContent = player.cards;
 
   li.append(div);
-
-  li.addEventListener("click", onItemClick);
-  return li;
 };
 
 const render = () => {
@@ -31,3 +27,6 @@ const render = () => {
     }
   }
 };
+
+render();
+*/
